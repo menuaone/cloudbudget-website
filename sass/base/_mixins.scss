@@ -1,0 +1,94 @@
+// button type style
+
+@mixin mybutton($color_1, $color_2) {
+  padding: 12px 31px;
+  border: 1px solid $color_2;
+  border-radius: 6px;
+  background-color: none;
+
+  color: $color_2;
+  transition: $transition;
+
+  &:hover {
+    background-color: $color_2;
+    // border-color: $color_1;
+    color: $secondary;
+  }
+  &:active {
+    background-color: $color_1;
+    border-color: $color_2;
+    color: $color_2;
+    box-shadow: none;
+  }
+  &:focus,
+  &:active:focus {
+    background-color: $white;
+    border-color: $secondary;
+    color: $color_1;
+  }
+  &:visited {
+    background-color: $color_1;
+    border-color: $color_2;
+    color: $color_1;
+  }
+}
+
+@mixin mybutton2($color_1, $color_2) {
+  // padding: 17px 33px;
+  border: 1px solid $color_1;
+  border-radius: 6px;
+  background-color: $color_1;
+
+  color: $color_2;
+  transition: $transition;
+
+  &:hover {
+    background-color: $color_1;
+    border-color: $color_2;
+    color: $color_2;
+  }
+  &:active {
+    background-color: $color_1;
+    border-color: $color_2;
+    color: $color_2;
+    box-shadow: none;
+  }
+  &:focus,
+  &:active:focus {
+    background-color: $color_1;
+    border-color: $color_1;
+    color: $color_2;
+  }
+  &:visited {
+    background-color: $color_1;
+    border-color: $color_2;
+  }
+}
+
+//  990
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+//  768
+@mixin mediaSTablet {
+  @media screen and (max-width: $stablet) {
+    @content;
+  }
+}
+
+//  576
+@mixin mediaXSTablet {
+  @media screen and (max-width: $xstablet) {
+    @content;
+  }
+}
+
+//  440
+@mixin mediaPhones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}

@@ -1,0 +1,27 @@
+.about {
+  padding-top: 96px;
+  margin-bottom: 96px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.about__left-flex {
+  flex: 1;
+  margin-right: 125px;
+
+  & .about__title {
+    margin-bottom: 35px;
+  }
+
+  & .about__text {
+    margin-bottom: 15px;
+  }
+}
+
+.about__right-flex {
+  flex: 1;
+}

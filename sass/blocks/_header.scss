@@ -1,0 +1,83 @@
+.header {
+  padding: 59px 0;
+  background-image: linear-gradient(
+      90deg,
+      rgba(213, 32, 71, 0.8) 0%,
+      rgba(238, 61, 27, 0.8) 100%
+    ),
+    url("/source/bcgmain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 782px;
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 118px;
+
+  & .header__logo {
+    display: flex;
+    gap: 10px;
+  }
+  & .nav__list {
+    display: flex;
+    gap: 20px;
+
+    & .nav__link {
+      color: white;
+      transition: all 0.25s ease-in-out;
+    }
+    :hover {
+      color: $secondary;
+    }
+  }
+
+  .header__btn {
+    @include mybutton($main, $white);
+  }
+}
+
+.header__main-row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+
+  & .main__title {
+    color: $white;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+
+    text-transform: uppercase;
+  }
+
+  & .main__subtitle {
+    max-width: 540px;
+
+    color: #fff;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
+
+.main__btn {
+  width: 160px;
+  height: 50px;
+
+  text-transform: uppercase;
+
+  //   color: $secondary;
+  //   background-color: $white;
+  //   border-radius: 6px;
+
+  @include mybutton2($white, $secondary);
+}
