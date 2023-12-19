@@ -1,0 +1,56 @@
+.tech {
+  padding-bottom: 115px;
+
+  &__title {
+    text-align: center;
+
+    padding-top: 65px;
+    margin-bottom: 65px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.tech__inner-item {
+  text-align: center;
+}
+
+.tech__img-box {
+  position: relative;
+
+  margin-bottom: 30px;
+
+  & .box__title {
+    color: rgba(16, 16, 16, 0.08);
+    font-family: $font-accent;
+    font-size: 100px;
+    font-weight: 700;
+  }
+
+  & .tech__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tech__card {
+  & .tech__card-title {
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-bottom: 11px;
+  }
+
+  & .tech__card-text {
+    font-size: 12px;
+    font-weight: 400;
+
+    width: 191px;
+  }
+}

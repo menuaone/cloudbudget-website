@@ -11,17 +11,21 @@
       <div class="container">
         <!-- top row -->
         <div class="header__top-row">
-          <div class="header__logo">
-            <img src="source/dashicons-cloud.svg" alt="CloudBudget" />
-            <img src="source/Logo.svg" alt="CloudBudget" class="logo__img" />
-          </div>
+          <a href="#" class="header__logo-link">
+            <div class="header__logo">
+              <img src="source/dashicons-cloud.svg" alt="CloudBudget" />
+              <img src="source/Logo.svg" alt="CloudBudget" class="logo__img" />
+            </div>
+          </a>
 
           <nav class="nav">
             <ul class="nav__list">
-              <li><a href="#" class="nav__link">Обзор</a></li>
-              <li><a href="#" class="nav__link">Особенности</a></li>
-              <li><a href="#" class="nav__link">Технология</a></li>
-              <li><a href="#" class="nav__link">Контакты</a></li>
+              <li><a href="#about" class="nav__link">Обзор</a></li>
+              <li>
+                <a href="#possibilities" class="nav__link">Особенности</a>
+              </li>
+              <li><a href="#tech" class="nav__link">Технология</a></li>
+              <li><a href="#form" class="nav__link">Контакты</a></li>
             </ul>
           </nav>
 
@@ -40,7 +44,7 @@
       </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__inner">
           <div class="about__left-flex">
@@ -54,9 +58,7 @@
               расходах с графиками, чтобы вы сразу могли увидеть расходы и
               бюджет. Читайте ниже, чтобы узнать больше.
             </p>
-            <a href="" class="about__link m--link"
-              ><span class="about__link-text">Узнать подробнее</span></a
-            >
+            <a href="" class="about__link m--link">Узнать подробнее</a>
           </div>
           <div class="about__right-flex">
             <img src="source/about-img.png" alt="about" class="about__img" />
@@ -64,6 +66,242 @@
         </div>
       </div>
     </section>
+
+    <!-- possibilities -->
+
+    <section class="possibilities" id="possibilities">
+      <div class="container">
+        <h2 class="possibilities__title h2">Возможности</h2>
+
+        <div class="possibilities__inner">
+          <!-- card 1 -->
+          <div class="possibilities__inner-item">
+            <div class="pos__img-box">
+              <img src="source/resources1.png" alt="cash" class="pos__img" />
+              <div class="pos__card">
+                <h3 class="pos__card-title">Поддерживает все валюты и карты</h3>
+                <p class="pos__card-text">
+                  Мы поддерживаем все популярные валюты и полностью настраиваем,
+                  чтобы добавить
+                </p>
+                <a href="" class="pos__link m--link"
+                  ><span class="pos__link-text">Подробнее</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="possibilities__inner-item">
+            <div class="pos__img-box">
+              <img src="source/resources2.png" alt="incomes" class="pos__img" />
+              <div class="pos__card">
+                <h3 class="pos__card-title">
+                  Управляйте своими расходами на ходу
+                </h3>
+                <p class="pos__card-text">
+                  Вы можете получить доступ к своей учетной записи из любой
+                  точки мира на любом устройстве
+                </p>
+                <a href="" class="pos__link m--link"
+                  ><span class="pos__link-text">Подробнее</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="possibilities__inner-item">
+            <div class="pos__img-box">
+              <img src="source/resources3.png" alt="cloud" class="pos__img" />
+              <div class="pos__card">
+                <h3 class="pos__card-title">
+                  Управление бюджетом осуществляется в облаке
+                </h3>
+                <p class="pos__card-text">
+                  Наше приложение создано для того, чтобы вы могли управлять
+                  управлять своим бюджетом.
+                </p>
+                <a href="" class="pos__link m--link"
+                  ><span class="pos__link-text">Подробнее</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tech -->
+
+    <section class="tech" id="tech">
+      <div class="container">
+        <h2 class="tech__title h2">Технологии</h2>
+        <div class="tech__inner">
+          <!-- item 1 -->
+          <div class="tech__inner-item">
+            <div class="tech__img-box">
+              <h4 class="box__title">01</h4>
+              <img src="source/tech-i-1.svg" alt="cloud" class="tech__icon" />
+            </div>
+
+            <div class="tech__card">
+              <h3 class="tech__card-title">Облачное хранение</h3>
+              <p class="tech__card-text">
+                Доступ из любой точки мира с любого устройства
+              </p>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="tech__inner-item">
+            <div class="tech__img-box">
+              <h4 class="box__title">02</h4>
+              <img src="source/tech-i-2.svg" alt="cloud" class="tech__icon" />
+            </div>
+
+            <div class="tech__card">
+              <h3 class="tech__card-title">Безопасность</h3>
+              <p class="tech__card-text">
+                Вся информация хранится на защищенных облачных серверах
+              </p>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="tech__inner-item">
+            <div class="tech__img-box">
+              <h4 class="box__title">03</h4>
+              <img src="source/tech-i-3.svg" alt="cloud" class="tech__icon" />
+            </div>
+
+            <div class="tech__card">
+              <h3 class="tech__card-title">PDF отчеты</h3>
+              <p class="tech__card-text">
+                Скачивайте ваши отчеты в удобном формате PDF
+              </p>
+            </div>
+          </div>
+
+          <!-- item 4 -->
+          <div class="tech__inner-item">
+            <div class="tech__img-box">
+              <h4 class="box__title">04</h4>
+              <img src="source/tech-i-4.svg" alt="cloud" class="tech__icon" />
+            </div>
+
+            <div class="tech__card">
+              <h3 class="tech__card-title">CSV отчеты</h3>
+              <p class="tech__card-text">
+                Скачивайте ваши отчеты в удобном формате CSV
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- economy -->
+
+    <section class="economy">
+      <div class="container">
+        <div class="economy__inner">
+          <div class="economy__left-flex">
+            <h2 class="economy__title h2">Сосредоточьтесь на экономии денег</h2>
+            <p class="economy__text m--text">
+              Мы помогаем вам отслеживать ваши привычки в расходах, чтобы вы
+              могли легко определить и сократить ненужные расходы. Просто
+              присоединяйтесь сегодня, чтобы начать!
+            </p>
+
+            <div class="economy__icon-box">
+              <a href="#" class="icon__link"
+                ><img
+                  src="source/ion-logo-google-playstore.svg"
+                  alt="playstore"
+                  class="eicon-1"
+              /></a>
+              <a href="#" class="icon__link"
+                ><img
+                  src="source/ion-logo-apple-appstore.svg"
+                  alt="applestore"
+                  class="eicon-2"
+              /></a>
+            </div>
+          </div>
+          <div class="economy__img-box">
+            <img src="source/economy.png" alt="economy" class="economy__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form -->
+
+    <section class="form" id="form">
+      <div class="container">
+        <div class="form__inner">
+          <div class="form__left-flex">
+            <h2 class="form__title h2">Напишите нам</h2>
+            <p class="form__text m--text">
+              Остались вопросы или опасения? Просто заполните форму ниже, и наша
+              служба поддержки свяжется с вами в течение 24 часов.
+            </p>
+          </div>
+          <div class="form__right-flex">
+            <form action="" class="form__box">
+              <label for="">
+                <input type="text" placeholder="Имя" required />
+              </label>
+              <label for="">
+                <input type="number" placeholder="Телефон" required />
+              </label>
+              <button type="submit" class="form__btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo-box">
+            <a href="#" class="footer__logo-link">
+              <div class="footer__logo">
+                <img src="source/dashicons-cloud.svg" alt="CloudBudget" />
+                <img
+                  src="source/Logo.svg"
+                  alt="CloudBudget"
+                  class="logo__img"
+                />
+              </div>
+            </a>
+
+            <!-- <p class="footer__text m--text">Охрана вашего кошелька</p> -->
+          </div>
+          <div class="footer__text-box">
+            <h4 class="footer__title">Адрес</h4>
+            <p class="footer__text m--text">
+              Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor 1090
+              Picosia USA
+            </p>
+          </div>
+
+          <div class="footer__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.8827803802!2d-118.74138195907396!3d34.02003924141445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sge!4v1702943085838!5m2!1sru!2sge"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- <script src="script/main.js"></script> -->
   </body>
 </html>

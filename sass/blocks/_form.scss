@@ -1,0 +1,46 @@
+.form {
+  padding-top: 159px;
+  padding-bottom: 159px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form__left-flex {
+  flex: 1;
+  margin-right: 125px;
+
+  max-width: 445px;
+
+  & .form__title {
+    margin-bottom: 35px;
+  }
+
+  //   & .form__text {
+  //   }
+}
+
+.form__right-flex {
+  flex: 1;
+}
+
+.form__box {
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 22px;
+    border-radius: 6px;
+    border: 1px solid var(--Gray-1, #333);
+
+    margin-bottom: 24px;
+  }
+
+  .form__btn {
+    @include mybutton2($secondary, $white);
+    padding: 17px 40px;
+    text-transform: uppercase;
+  }
+}
