@@ -25,3 +25,38 @@
 .about__right-flex {
   flex: 1;
 }
+
+@include mediaLaptop {
+  .about {
+    .about__title {
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+
+    .about__text {
+      font-size: 12px;
+    }
+  }
+
+  .about__left-flex {
+    margin-right: 50px;
+  }
+}
+
+@include mediaPhones {
+  .about {
+    .about__inner {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      gap: 40px;
+    }
+
+    .about__left-flex {
+      margin-right: 0px;
+    }
+  }
+}

@@ -14,6 +14,9 @@ body {
   padding: 0 165px;
   overflow-x: hidden;
 
+  @include mediaLaptop {
+    padding: 0 100px;
+  }
   @include mediaTablet {
     padding: 0 70px;
   }

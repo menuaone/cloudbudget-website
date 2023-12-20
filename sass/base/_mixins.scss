@@ -65,6 +65,13 @@
   }
 }
 
+//  1025
+@mixin mediaLaptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
 //  990
 @mixin mediaTablet {
   @media screen and (max-width: $tablet) {
