@@ -41,3 +41,45 @@
 .economy__right-flex {
   flex: 1;
 }
+
+@include mediaLaptop {
+  .economy {
+    .economy__title {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .economy__text {
+      font-size: 12px;
+    }
+  }
+
+  .economy__left-flex {
+    margin-right: 50px;
+  }
+}
+
+@include mediaPhones {
+  .economy {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .economy__inner {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      gap: 40px;
+    }
+
+    .economy__left-flex {
+      margin-right: 0px;
+    }
+  }
+
+  .economy__icon-box {
+    justify-content: center;
+  }
+}

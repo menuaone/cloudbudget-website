@@ -37,6 +37,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .four {
+    top: 60%;
+  }
 }
 
 .tech__card {
@@ -52,5 +56,20 @@
     font-weight: 400;
 
     width: 191px;
+  }
+}
+
+@include mediaTablet {
+  .tech {
+    &__title {
+      font-size: 30px;
+      padding-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    &__inner {
+      justify-content: space-evenly;
+      gap: 50px;
+    }
   }
 }

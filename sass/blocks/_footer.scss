@@ -11,8 +11,12 @@
 
 .footer__logo {
   display: flex;
+  justify-content: center;
   gap: 10px;
+
   background-color: $secondary;
+
+  margin-bottom: 25px;
 }
 
 .footer__title {
@@ -24,4 +28,25 @@
 }
 .footer__text {
   width: 240px;
+}
+
+@include mediaSTablet {
+  .footer {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@include mediaXSTablet {
+  .footer {
+    &__inner {
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      gap: 50px;
+    }
+  }
 }

@@ -11,6 +11,7 @@
   height: 100vh;
 }
 
+// navigation sector
 .header__top-row {
   display: flex;
   justify-content: space-between;
@@ -26,6 +27,7 @@
     display: flex;
     gap: 10px;
   }
+
   & .nav__list {
     display: flex;
     gap: 20px;
@@ -47,6 +49,8 @@
     display: none;
   }
 }
+
+// main header sector
 
 .header__main-row {
   display: flex;
@@ -95,7 +99,7 @@
   @include mybutton2($white, $secondary);
 }
 
-// nav icon styles
+// mobile nav icon styles
 
 .nav-icon-btn {
   --time: 0.1s;
@@ -164,6 +168,8 @@
   transform: rotate(-45deg);
 }
 
+// media sector
+
 @include mediaSTablet {
   .header__top-row {
     & .nav,
@@ -229,6 +235,8 @@
     align-items: center;
 
     row-gap: 20px;
+
+    font-size: 20px;
   }
 
   .header__logo {

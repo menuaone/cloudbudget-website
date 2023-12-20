@@ -77,7 +77,7 @@
 
     <!-- possibilities -->
 
-    <section class="possibilities for--mobile" id="possibilities">
+    <section class="possibilities" id="possibilities">
       <div class="container">
         <h2 class="possibilities__title h2">Возможности</h2>
 
@@ -142,7 +142,7 @@
 
     <!-- tech -->
 
-    <section class="tech for--mobile" id="tech">
+    <section class="tech" id="tech">
       <div class="container">
         <h2 class="tech__title h2">Технологии</h2>
         <div class="tech__inner">
@@ -195,7 +195,11 @@
           <div class="tech__inner-item">
             <div class="tech__img-box">
               <h4 class="box__title">04</h4>
-              <img src="source/tech-i-4.svg" alt="cloud" class="tech__icon" />
+              <img
+                src="source/tech-i-4.svg"
+                alt="cloud"
+                class="tech__icon four"
+              />
             </div>
 
             <div class="tech__card">
@@ -211,7 +215,7 @@
 
     <!-- economy -->
 
-    <section class="economy for--mobile">
+    <section class="economy">
       <div class="container">
         <div class="economy__inner">
           <div class="economy__left-flex">
@@ -237,7 +241,7 @@
               /></a>
             </div>
           </div>
-          <div class="economy__img-box">
+          <div class="economy__right-flex">
             <img src="source/economy.png" alt="economy" class="economy__img" />
           </div>
         </div>
@@ -246,7 +250,7 @@
 
     <!-- form -->
 
-    <section class="form for--mobile" id="form">
+    <section class="form" id="form">
       <div class="container">
         <div class="form__inner">
           <div class="form__left-flex">
@@ -258,11 +262,17 @@
           </div>
           <div class="form__right-flex">
             <form action="" class="form__box">
-              <label for="">
-                <input type="text" placeholder="Имя" required />
+              <label for="name">
+                <input type="text" id="name" placeholder="Имя" required />
               </label>
-              <label for="">
-                <input type="number" placeholder="Телефон" required />
+              <label for="phone">
+                <input
+                  type="number"
+                  id="phone"
+                  placeholder="Телефон"
+                  required
+                  autocomplete="off"
+                />
               </label>
               <button type="submit" class="form__btn">Отправить</button>
             </form>
@@ -271,7 +281,9 @@
       </div>
     </section>
 
-    <footer class="footer for--mobile">
+    <!-- footer -->
+
+    <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__logo-box">
@@ -284,16 +296,17 @@
                   class="logo__img"
                 />
               </div>
+
+              <div class="footer__text-box">
+                <h4 class="footer__title">Адрес</h4>
+                <p class="footer__text m--text">
+                  Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor
+                  1090 Picosia USA
+                </p>
+              </div>
             </a>
 
             <!-- <p class="footer__text m--text">Охрана вашего кошелька</p> -->
-          </div>
-          <div class="footer__text-box">
-            <h4 class="footer__title">Адрес</h4>
-            <p class="footer__text m--text">
-              Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor 1090
-              Picosia USA
-            </p>
           </div>
 
           <div class="footer__map">

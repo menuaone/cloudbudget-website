@@ -72,3 +72,29 @@
     margin-bottom: 12px;
   }
 }
+
+@include mediaLaptop {
+  .possibilities {
+    &__title {
+      font-size: 30px;
+      padding-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    &__inner {
+      justify-content: space-evenly;
+
+      gap: 120px;
+
+      padding-bottom: 180px;
+    }
+  }
+}
+
+@include mediaPhones {
+  .possibilities {
+    &__inner {
+      gap: 150px;
+    }
+  }
+}

@@ -6,12 +6,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    gap: 125px;
   }
 }
 
 .form__left-flex {
   flex: 1;
-  margin-right: 125px;
 
   max-width: 445px;
 
@@ -42,5 +43,36 @@
     @include mybutton2($secondary, $white);
     padding: 17px 40px;
     text-transform: uppercase;
+  }
+}
+
+@include mediaLaptop {
+  .form {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    &__inner {
+      display: flex;
+
+      gap: 80px;
+    }
+  }
+}
+
+@include mediaPhones {
+  .form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      gap: 50px;
+    }
   }
 }

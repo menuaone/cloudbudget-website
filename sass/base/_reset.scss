@@ -92,6 +92,19 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+// arrows reset
+
+// mozilla
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+// chrome
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 input:focus,
 input:active,
 button:focus,
